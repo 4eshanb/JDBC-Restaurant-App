@@ -67,14 +67,15 @@ have been updated.
 Won’t that value always equal maxVisitCount?  
 No. Suppose that there are 3 visits by High status
 customers, 5 visits by Medium status customers, and 9 visits by Low status customers.  
+   
 • If maxVisitCount is 17 or more, then all 17 of these visits will have their costs reduced, and
-reduceSomeCostsFunction returns the value 17 (even if maxVisitCount was 20).
+reduceSomeCostsFunction returns the value 17 (even if maxVisitCount was 20).  
 • If maxVisitCount is 8, then the costs for the visits by the High and Medium status
-customers will be reduced, and reduceSomeCostsFunction returns the value 8.
+customers will be reduced, and reduceSomeCostsFunction returns the value 8.  
 • If maxVisitCount is 7, then the costs for the 3 visits by the High status customers will be
 reduced, and the costs for 4 of the 5 Medium status customer visits will be reduced, and
 reduceSomeCostsFunction returns the value 7. Which Medium status customers receive
-the reduction? The ones with the earlies joinDate.  
+the reduction? The ones with the earlies joinDate.    
 
 The stored function is saved to a text file named
 reduceSomeCostsFunction.pgsql. To create the stored function reduceSomeCostsFunction, issue
